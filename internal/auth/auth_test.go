@@ -28,7 +28,7 @@ func TestGetAPIKey(t *testing.T) {
 
 	t.Run("correct header", func(t *testing.T) {
 		headers := http.Header{
-			"Authorization": []string{"ApiKeys some-key"},
+			"Authorization": []string{"ApiKey some-key"},
 		}
 		value, err := auth.GetAPIKey(headers)
 		if err != nil {
